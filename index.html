@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Ventas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Registro de Ventas Mensuales</h1>
+        
+        <div id="chartContainer">
+            <canvas id="salesChart"></canvas>
+        </div>
+
+        <form id="salesForm">
+            <div>
+                <label for="month">Mes:</label>
+                <input type="text" id="month" placeholder="Ej. Enero" required>
+            </div>
+            <div>
+                <label for="sales">Ventas:</label>
+                <input type="number" id="sales" placeholder="Monto de ventas" required>
+            </div>
+            <div style="grid-column: 1 / -1;">
+                <button type="submit">Agregar/Actualizar Venta</button>
+            </div>
+        </form>
+
+        <table id="salesTable">
+            <thead>
+                <tr>
+                    <th>Mes</th>
+                    <th>Ventas</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="salesTableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

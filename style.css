@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#salesForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+#chartContainer {
+    width: 100%;
+    max-height: 400px;
+}
+#salesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#salesTable th, #salesTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
